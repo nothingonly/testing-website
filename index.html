@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majesty Mandi House | Premium Authentic Arabian Dining</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS CDN & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: '#4A0404',
+                        gold: '#D4AF37',
+                        darkbrown: '#1A110D',
+                        offwhite: '#F3F4F6',
+                        glass: 'rgba(26, 17, 13, 0.7)'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbrown text-offwhite font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-darkbrown/90 backdrop-blur-md border-b border-gold/20 transition-all">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-serif text-2xl font-bold text-gold tracking-widest uppercase">Majesty</h1>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider text-offwhite/80">
+                <a href="#menu" class="hover:text-gold transition">Menu</a>
+                <a href="#gallery" class="hover:text-gold transition">Gallery</a>
+                <a href="#reservation" class="hover:text-gold transition">Reservations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center text-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=2000&auto=format&fit=crop" alt="Authentic Mandi" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-darkbrown via-darkbrown/60 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl px-6 flex flex-col items-center">
+            <span class="text-gold text-sm tracking-[0.3em] uppercase mb-4">Taste The Legacy</span>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 drop-shadow-lg">Majesty Mandi House</h1>
+            <p class="font-serif italic text-xl md:text-2xl text-offwhite/90 mb-10">Welcome to the Pinnacle of Authentic Arabian Dining in Hanamkonda.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                <a href="#menu" class="bg-gold text-darkbrown px-8 py-3 rounded-full font-semibold hover:bg-white transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">View Menu</a>
+                <a href="#reservation" class="border border-gold text-gold px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-darkbrown transition">Reserve Table</a>
+            </div>
+
+            <!-- Glassmorphism Badges -->
+            <div class="flex flex-wrap justify-center gap-4 text-xs tracking-wider uppercase">
+                <div class="bg-glass backdrop-blur-sm border border-gold/30 px-4 py-2 rounded-full text-gold flex items-center gap-2">
+                    <span>❄️ A/C Comfort Cabin</span>
+                </div>
+                <div class="bg-glass backdrop-blur-sm border border-gold/30 px-4 py-2 rounded-full text-gold flex items-center gap-2">
+                    <span>👨‍👩‍👧‍👦 Family Friendly</span>
+                </div>
+                <div class="bg-glass backdrop-blur-sm border border-gold/30 px-4 py-2 rounded-full text-gold flex items-center gap-2">
+                    <span>🌿 100% Authentic Spices</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Curated Menu Section -->
+    <section id="menu" class="py-24 bg-burgundy relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl text-gold mb-4">Explore Our Curated Menu</h2>
+                <p class="text-offwhite/70 max-w-2xl mx-auto">Discover the rich, aromatic flavors of the Middle East, crafted with traditional techniques and premium ingredients.</p>
+            </div>
+
+            <!-- Menu Grid Container -->
+            <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Javascript will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-24 bg-darkbrown">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl text-gold mb-6">Plan a Grand Celebration</h2>
+                    <p class="text-offwhite/70 mb-8 leading-relaxed">Whether hosting a family gathering, birthday, or a corporate dinner, our spacious comfort cabins provide the perfect ambiance. Reserve your table easily via WhatsApp.</p>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Restaurant Ambiance" class="rounded-xl shadow-2xl border border-gold/10">
+                </div>
+                
+                <div class="bg-burgundy/50 backdrop-blur-md p-8 rounded-2xl border border-gold/20 shadow-2xl">
+                    <form id="reservation-form" class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gold uppercase tracking-wider mb-2">Guests</label>
+                                <select id="res-guests" class="w-full bg-darkbrown border border-gold/30 rounded-lg p-3 text-offwhite focus:outline-none focus:border-gold">
+                                    <option value="2">2 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="8+">8+ Guests</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gold uppercase tracking-wider mb-2">Date</label>
+                                <input type="date" id="res-date" class="w-full bg-darkbrown border border-gold/30 rounded-lg p-3 text-offwhite focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-gold uppercase tracking-wider mb-2">Preferred Time Slot</label>
+                            <div class="flex gap-3 flex-wrap" id="time-slots">
+                                <button type="button" class="time-btn border border-gold text-gold rounded-full px-4 py-1 hover:bg-gold hover:text-darkbrown transition active-time">1:00 PM</button>
+                                <button type="button" class="time-btn border border-gold text-gold rounded-full px-4 py-1 hover:bg-gold hover:text-darkbrown transition">7:30 PM</button>
+                                <button type="button" class="time-btn border border-gold text-gold rounded-full px-4 py-1 hover:bg-gold hover:text-darkbrown transition">8:30 PM</button>
+                                <button type="button" class="time-btn border border-gold text-gold rounded-full px-4 py-1 hover:bg-gold hover:text-darkbrown transition">9:30 PM</button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gold uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" id="res-name" placeholder="John Doe" class="w-full bg-darkbrown border border-gold/30 rounded-lg p-3 text-offwhite focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gold uppercase tracking-wider mb-2">Mobile Number</label>
+                                <input type="tel" id="res-phone" placeholder="+91 XXXXX XXXXX" class="w-full bg-darkbrown border border-gold/30 rounded-lg p-3 text-offwhite focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-gold uppercase tracking-wider mb-2">Special Occasion</label>
+                            <select id="res-occasion" class="w-full bg-darkbrown border border-gold/30 rounded-lg p-3 text-offwhite focus:outline-none focus:border-gold">
+                                <option value="Family Dinner">Family Dinner</option>
+                                <option value="Birthday">Birthday Celebration</option>
+                                <option value="Anniversary">Anniversary</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <button type="button" onclick="submitReservation()" class="w-full bg-gold text-darkbrown font-bold py-4 rounded-lg hover:bg-white transition flex justify-center items-center gap-2">
+                            CONFIRM TABLE VIA WHATSAPP
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-serif text-2xl text-gold mb-4">Majesty Mandi House</h3>
+                <p class="text-offwhite/60 text-sm leading-relaxed mb-4">H. No: 5-11-245, 2nd Floor KSR Plaza,<br>Above Arvind Store, Kishanapura,<br>Naimnagar, Hanamkonda,<br>Warangal-506001</p>
+                <p class="text-gold">📞 8121213533</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Operating Hours</h4>
+                <ul class="text-offwhite/60 space-y-2 text-sm">
+                    <li>Mon - Fri: 12:00 PM - 11:00 PM</li>
+                    <li>Sat - Sun: 11:00 AM - 11:30 PM</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Follow Us</h4>
+                <a href="https://www.instagram.com/majestyhanamkonda" target="_blank" class="text-offwhite/60 hover:text-gold transition text-sm">Instagram: @Majestyhanamkonda</a>
+            </div>
+        </div>
+        <div class="text-center text-offwhite/40 text-xs mt-12">
+            &copy; 2026 Majesty Mandi House. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <button onclick="toggleCart()" class="fixed bottom-6 right-6 bg-gold text-darkbrown rounded-full p-4 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:scale-105 transition-transform z-40 flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        <span class="font-bold">View Basket (<span id="cart-count">0</span>)</span>
+    </button>
+
+    <!-- Cart Drawer Modal -->
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full md:w-[450px] bg-darkbrown shadow-2xl border-l border-gold/20 transform translate-x-full transition-transform duration-300 z-50 flex flex-col">
+        <div class="p-6 border-b border-gold/20 flex justify-between items-center bg-burgundy">
+            <h3 class="font-serif text-2xl text-gold">Your Order</h3>
+            <button onclick="toggleCart()" class="text-offwhite hover:text-gold text-2xl">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-6 scrollbar-hide">
+            <!-- Delivery/Pickup Tabs -->
+            <div class="flex bg-black rounded-lg p-1 mb-6 border border-gold/20">
+                <button id="tab-delivery" onclick="setOrderType('delivery')" class="flex-1 py-2 text-sm text-darkbrown font-bold bg-gold rounded-md transition">HOME DELIVERY</button>
+                <button id="tab-pickup" onclick="setOrderType('pickup')" class="flex-1 py-2 text-sm text-offwhite/60 font-bold hover:text-white transition">PICKUP</button>
+            </div>
+
+            <!-- Cart Items Container -->
+            <div id="cart-items" class="space-y-4 mb-8">
+                <!-- Populated via JS -->
+                <p class="text-offwhite/40 text-center italic mt-10">Your basket is empty.</p>
+            </div>
+
+            <!-- Checkout Form -->
+            <div id="checkout-form" class="space-y-4 border-t border-gold/20 pt-6 hidden">
+                <input type="text" id="order-name" placeholder="Full Name" class="w-full bg-black border border-gold/30 rounded-lg p-3 text-sm text-offwhite focus:border-gold outline-none">
+                <input type="tel" id="order-phone" placeholder="Mobile Number" class="w-full bg-black border border-gold/30 rounded-lg p-3 text-sm text-offwhite focus:border-gold outline-none">
+                
+                <div id="delivery-fields" class="space-y-4">
+                    <input type="text" id="order-address" placeholder="House/Flat No & Street" class="w-full bg-black border border-gold/30 rounded-lg p-3 text-sm text-offwhite focus:border-gold outline-none">
+                    <input type="text" id="order-area" placeholder="Area / Locality (e.g. Naimnagar)" class="w-full bg-black border border-gold/30 rounded-lg p-3 text-sm text-offwhite focus:border-gold outline-none">
+                </div>
+            </div>
+        </div>
+
+        <!-- Totals & Submit -->
+        <div class="p-6 bg-burgundy border-t border-gold/20">
+            <div class="flex justify-between text-offwhite/70 text-sm mb-2">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹ 0</span>
+            </div>
+            <div class="flex justify-between text-offwhite/70 text-sm mb-4">
+                <span>GST (5%)</span>
+                <span id="cart-gst">₹ 0</span>
+            </div>
+            <div class="flex justify-between text-gold font-bold text-xl mb-6">
+                <span>Grand Total</span>
+                <span id="cart-total">₹ 0</span>
+            </div>
+            <button onclick="sendOrder()" class="w-full bg-[#25D366] text-white font-bold py-4 rounded-lg hover:bg-[#1ebe57] transition flex justify-center items-center gap-2">
+                SEND ORDER VIA WHATSAPP
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay for Drawer -->
+    <div id="drawer-overlay" onclick="toggleCart()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
